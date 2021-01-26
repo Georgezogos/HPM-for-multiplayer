@@ -511,6 +511,7 @@ political_decisions = {
         }
 
         effect = {
+            set_global_flag = DVG_infamy
             prestige = 20
             all_core = {
                 remove_core = THIS
@@ -687,6 +688,7 @@ political_decisions = {
         }
 
         effect = {
+            set_global_flag = DVG_infamy
             prestige = 20
             random_owned = { limit = { owner = { accepted_culture = french } } owner = { remove_accepted_culture = french } }
             random_owned = { limit = { owner = { accepted_culture = polish } } owner = { remove_accepted_culture = polish } }
@@ -1034,9 +1036,9 @@ political_decisions = {
                 change_province_name = "Kolmar"
             }
             409 = {
-                change_province_name = "Straßburg"
+                change_province_name = "Straï¿½burg"
                 state_scope = {
-                    change_region_name = "Elsaß-Lothringen"
+                    change_region_name = "Elsaï¿½-Lothringen"
                 }
             }
             prestige = 5

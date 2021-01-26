@@ -175,7 +175,12 @@ political_decisions = {
                 duration = -1
             }
             set_global_flag = geneva_convention_held
+            set_global_flag = DVG_infamy
             prestige = 10
+        }
+
+        ai_will_do = {
+            factor = 1
         }
     }
 
