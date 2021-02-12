@@ -8,3 +8,4 @@
    - The ability to request/give financial aid from/to other players
    - The ability to transfer a state/province to other players
    - Divergence of Darkness-like infamy reduction for early game
+   - Larger assimilation scale
