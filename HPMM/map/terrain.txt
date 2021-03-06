@@ -2,6 +2,19 @@ terrain = 64
 
 
 categories =  {
+
+    rock = {
+        movement_cost = 1.0
+        defence = 2
+        color = { 140 150 130 }
+        farm_rgo_size = -0.5
+        farm_rgo_eff = 0.25
+        mine_rgo_size = -0.5
+        mine_rgo_eff = 0.25
+        supply_limit = 10
+    }
+
+
     ocean = {
         movement_cost = 1.0
         is_water = yes
