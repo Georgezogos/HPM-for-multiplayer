@@ -12,3 +12,6 @@
    - The ability to transfer a state/province to other players
    - Divergence of Darkness-like infamy reduction for early game
    - Larger assimilation scale
+   - Gibraltar's terrain is now a stretched image of Dwayne "The Rock" Johnson
+   - Nick is humiliated by everyone (including himself) at the start of the game
+   - Increased base game infamy reduction and decreased DoD's infamy reduction
