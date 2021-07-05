@@ -15,3 +15,7 @@
    - Gibraltar's terrain is now a stretched image of Dwayne "The Rock" Johnson
    - Nick is humiliated by everyone (including himself) at the start of the game
    - Increased base game infamy reduction and decreased DoD's infamy reduction
+   - Greece can move capital to Constantinople
+   - New roman republic flag
+
+** Current checksum : PKSR**
