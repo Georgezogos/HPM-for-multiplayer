@@ -18,4 +18,4 @@
    - Greece can move capital to Constantinople
    - New roman republic flag
 
-*Current checksum : PKSR*
+## __Current checksum : PKSR__
