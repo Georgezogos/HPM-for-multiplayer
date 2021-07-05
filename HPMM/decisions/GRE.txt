@@ -107,6 +107,29 @@ political_decisions = {
         }
     }
 
+
+    GRE_move_capital = {
+        potential = {
+            tag = GRE
+        }
+
+        allow = {
+            GRE = {
+                war = no
+                owns = 860
+                is_core = 860
+            }
+            860 {
+                is_primary_culture = GRE
+            }
+        }
+
+        effect = {
+            capital = 860
+        }
+    }
+
+
     unite_with_greece = {
     picture = unite_with_greece
         potential = {
