@@ -5,7 +5,7 @@
  
  DISCLAIMER : This mod exists for use in a specific discord server. If you were not sent from there then you should probably not download this.
  
- Seeing that there is no licence on the original HPM, I decided to make this repo public, but with any request from the original devs I will take it down.
+ Seeing that there is no licence on the original HPM, I decided to make this repository public, but with any request from the original devs I will take it down.
  
  Current features:
    - The ability to request/give financial aid from/to other players
@@ -17,5 +17,7 @@
    - Increased base game infamy reduction and decreased DoD's infamy reduction
    - Greece can move capital to Constantinople
    - New roman republic flag
+   - Epirus is a state and Athens is in Central Greece
+   - Ability to create a unified India as GB (not recommended though)
 
-## __Current checksum : PKSR__
+## __Current checksum : YUID__
