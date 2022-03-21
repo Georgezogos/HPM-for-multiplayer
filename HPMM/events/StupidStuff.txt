@@ -11,7 +11,7 @@ country_event {
 
     trigger = {
         ai = no
-        year = 1831
+        year = 1836
     }
 
     option = {

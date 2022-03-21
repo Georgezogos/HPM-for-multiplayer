@@ -1277,4 +1277,72 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
+
+    ENG_create_india = {
+        potential = {
+
+            NOT = {
+                exists = HND
+                is_culture_group = south_asian
+            }
+            is_greater_power = yes
+        }
+        allow = {
+            war = no
+            is_greater_power = yes
+        }
+
+        effect = {
+                any_country = {
+                limit = {
+                    OR = {
+                        primary_culture = avadhi
+                        primary_culture = marathi
+                        primary_culture = rajput
+                        primary_culture = bihari
+                        primary_culture = bengali
+                        primary_culture = kanauji
+                        primary_culture = panjabi
+                        primary_culture = kashmiri
+                        primary_culture = manipuri
+                        primary_culture = assamese
+                        primary_culture = oriya
+                        primary_culture = gujarati
+                        primary_culture = kannada
+                        primary_culture = malayalam
+                        primary_culture = telegu
+                        primary_culture = sindi
+                        primary_culture = baluchi
+                    }
+                    ai = yes
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                }
+                annex_to = THIS
+            }
+            any_owned = {
+                limit = {
+                    is_core = THIS
+                    is_core = HND
+                }
+                remove_core = HND
+            }
+            release_vassal = HND
+            create_alliance = HND
+            diplomatic_influence = {
+                who = HND
+                value = 300
+            }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+
+    }
+
 }
+
+
