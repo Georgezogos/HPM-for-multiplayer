@@ -111,6 +111,7 @@ political_decisions = {
     GRE_move_capital = {
         potential = {
             tag = GRE
+	    NOT = { GRE = { capital = 860 } }
         }
 
         allow = {
@@ -119,7 +120,7 @@ political_decisions = {
                 owns = 860
                 is_core = 860
             }
-            860 {
+            860 = {
                 is_primary_culture = GRE
             }
         }

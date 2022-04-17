@@ -1286,10 +1286,10 @@ political_decisions = {
                 is_culture_group = south_asian
             }
             is_greater_power = yes
+	    tag = ENG
         }
         allow = {
             war = no
-            is_greater_power = yes
         }
 
         effect = {
