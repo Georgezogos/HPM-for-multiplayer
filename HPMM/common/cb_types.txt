@@ -111,6 +111,9 @@ establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
 negotiated_transfer
 status_quo
+conquest_low
+conquest_tiny
+conquest_minuscule
 }
 
 # Great War CB's
@@ -10643,6 +10646,246 @@ steal_puppet = {
         THIS = { set_country_flag = new_overlord }
     }
 }
+
+conquest_low = {
+    sprite_index = 2
+    is_triggered_only = yes
+    months = 12
+    crisis = no
+
+    can_use = {
+        THIS = { ai = no }
+        total_pops = 100000
+        NOT = { total_pops = 400000 }
+        NOT = { is_our_vassal = THIS }
+        # only one state or unciv
+        NOT = { number_of_states = 5 }
+		OR = {
+            war_with = THIS
+            THIS = {
+                total_amount_of_divisions = 1
+                NOT = { has_country_modifier = neutrality_modifier }
+            }
+        }
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality_modifier
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+                THIS = { civilized = no }
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+				NOT = { number_of_states = 3 }
+                THIS = { civilized = yes }
+            }
+        }
+        OR = {
+            any_owned_province = { port = yes }
+            neighbour = THIS
+            AND = { war_with = THIS ai = no }
+        }
+    }
+
+    badboy_factor = 1.0
+    prestige_factor = 5
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 60
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    construction_speed = 0.5
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    po_annex = yes
+
+    war_name = WAR_CONQUEST_LOW_NAME
+}
+
+conquest_tiny = {
+    sprite_index = 2
+    is_triggered_only = yes
+    months = 12
+    crisis = no
+
+    can_use = {
+        THIS = { ai = no }
+        total_pops = 10000
+        NOT = { total_pops = 100000 }
+        NOT = { is_our_vassal = THIS }
+        # only one state or unciv
+        NOT = { number_of_states = 5 }
+		OR = {
+            war_with = THIS
+            THIS = {
+                total_amount_of_divisions = 1
+                NOT = { has_country_modifier = neutrality_modifier }
+            }
+        }
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality_modifier
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+                THIS = { civilized = no }
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+				NOT = { number_of_states = 3 }
+                THIS = { civilized = yes }
+            }
+        }
+        OR = {
+            any_owned_province = { port = yes }
+            neighbour = THIS
+            AND = { war_with = THIS ai = no }
+        }
+    }
+
+    badboy_factor = 0.5
+    prestige_factor = 5
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 60
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    construction_speed = 0.5
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    po_annex = yes
+
+    war_name = WAR_CONQUEST_TINY_NAME
+}
+
+conquest_minuscule = {
+    sprite_index = 2
+    is_triggered_only = yes
+    months = 12
+    crisis = no
+
+    can_use = {
+		is_vassal = no
+		is_substate = no
+		NOT = { has_country_modifier = neutrality_modifier }
+        THIS = { ai = no }
+        NOT = { total_pops = 10000 }
+        NOT = { is_our_vassal = THIS }
+        # only one state or unciv
+        NOT = { number_of_states = 5 }
+		OR = {
+            war_with = THIS
+            THIS = {
+                total_amount_of_divisions = 1
+                NOT = { has_country_modifier = neutrality_modifier }
+            }
+        }
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality_modifier
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+                THIS = { civilized = no }
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+				NOT = { number_of_states = 3 }
+                THIS = { civilized = yes }
+            }
+        }
+        OR = {
+            any_owned_province = { port = yes }
+            neighbour = THIS
+            AND = { war_with = THIS ai = no }
+        }
+    }
+
+    badboy_factor = 0.1
+    prestige_factor = 5
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 60
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    construction_speed = 0.5
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    po_annex = yes
+
+    war_name = WAR_CONQUEST_MINUSCULE_NAME
+}
+
 
 # #Permanent Colonial Claims
 # permanent_colonial_claim = {
