@@ -1241,4 +1241,30 @@ political_decisions = {
         }
     }
 
+    FRA_accept_the_wallonians = {
+
+        picture = kanun_i_esasi
+        potential = {
+            tag = FRA
+            NOT = { accepted_culture = wallonian }
+        }
+
+        allow = {
+            state_n_government = 1
+            owns = 392 
+            owns = 393 
+            owns = 394 
+            owns = 395 
+            owns = 398 
+        }
+
+        effect = {
+            add_accepted_culture = wallonian
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
 }
