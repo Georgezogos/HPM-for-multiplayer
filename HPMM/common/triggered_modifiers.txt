@@ -549,7 +549,7 @@ DVG_badboy_1 = {
 		NOT = { has_global_flag = DVG_infamy }
 		is_greater_power = yes 
 	}
-	badboy = -0.20 
+	badboy = -0.10 
 	icon = 1
 
 }
@@ -559,7 +559,7 @@ DVG_badboy_2 = {
 		NOT = { has_global_flag = DVG_infamy }
 		is_greater_power = no 
 	}
-	badboy = -0.15 
+	badboy = -0.08 
 	icon = 1
 
 }
