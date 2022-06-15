@@ -1,7 +1,7 @@
 # HPM for multiplayer
  This is a mod for the game Victoria II, based on HPM
  
- Just copy the HPM-multi folder and the HPM-multi.mod to the mod folder and you're good to go.
+ Just copy the HPMM folder and the HPMM.mod to the mod folder and you're good to go.
  
  DISCLAIMER : This mod exists for use in a specific discord server. If you were not sent from there then you should probably not download this.
  
