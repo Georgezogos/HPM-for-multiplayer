@@ -3,9 +3,6 @@
  
  Just copy the HPMM folder and the HPMM.mod to the mod folder and you're good to go.
  
- DISCLAIMER : This mod exists for use in a specific discord server. If you were not sent from there then you should probably not download this.
- 
- Seeing that there is no licence on the original HPM, I decided to make this repository public, but with any request from the original devs I will take it down.
  
  Current features:
    - The ability to request/give financial aid from/to other players
@@ -13,7 +10,7 @@
    - Divergence of Darkness-like infamy reduction for early game
    - Larger assimilation scale
    - Gibraltar's terrain is now a stretched image of Dwayne "The Rock" Johnson
-   - Nick is humiliated by everyone (including himself) at the start of the game
+   - Pope is humiliated by everyone (including himself) at the start of the game
    - Increased base game infamy reduction and decreased DoD's infamy reduction
    - Greece can move capital to Constantinople
    - New roman republic flag
@@ -21,4 +18,3 @@
    - Ability to create a unified India as GB (not recommended though)
    - New conquest wargoals for smaller nations
 
-## __Current checksum : IGMA__
