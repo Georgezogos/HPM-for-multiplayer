@@ -1,9 +1,9 @@
 country_event {
     id = 696969
 
-    title = "Nick sucks at the game"
+    title = "Pope sucks at the game"
 
-    desc = "Nick is a sore loser who can't get the congo"
+    desc = "Pope is a sore loser who can't form Italy"
 
     picture = "nick"
 
@@ -15,7 +15,7 @@ country_event {
     }
 
     option = {
-        name = "Laugh at Nick"
+        name = "Laugh at Pope"
 
         THIS = {
             prestige = 1
