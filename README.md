@@ -17,4 +17,5 @@
    - Epirus is a state and Athens is in Central Greece
    - Ability to create a unified India as GB (not recommended though)
    - New conquest wargoals for smaller nations
+   - Vannila Scandi requierments 
 
