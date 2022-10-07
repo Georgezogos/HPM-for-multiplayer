@@ -20,3 +20,4 @@
    - Vannila Scandi requierments 
    - Take capital Cb added
    - News button removed
+   - Main theme Changed
