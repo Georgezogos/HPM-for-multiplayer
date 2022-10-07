@@ -1,4 +1,4 @@
-name = "Autistic HPMM"
-path = "mod/Autistic-HPMM"
-user_dir = "Autistic-HPMM"
+name = "HPMM"
+path = "mod/HPMM"
+user_dir = "HPMM"
 replace_path = "history/provinces"
