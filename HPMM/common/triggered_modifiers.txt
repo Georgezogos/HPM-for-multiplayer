@@ -544,32 +544,3 @@ ryotwari = {
     # icon = 16
 # }
 
-DVG_badboy_1 = { 
-	trigger = {
-		NOT = { has_global_flag = DVG_infamy }
-		is_greater_power = yes 
-	}
-	badboy = -0.10 
-	icon = 1
-
-}
-
-DVG_badboy_2 = { 
-	trigger = {
-		NOT = { has_global_flag = DVG_infamy }
-		is_greater_power = no 
-	}
-	badboy = -0.08 
-	icon = 1
-
-}
-
-#Infamy_thing = {
-#    trigger = {
-#        OR = {
-#            has_global_flag = geneva_convention_held
-#            year = 1870
-#        }
-#    }
-#    set_global_flag = DVG_infamy
-#}
