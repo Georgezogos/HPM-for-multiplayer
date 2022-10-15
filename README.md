@@ -5,6 +5,7 @@
  
  
  Current features:
+ Pre-Nick changes
    - The ability to request/give financial aid from/to other players
    - The ability to transfer a state/province to other players
    - Divergence of Darkness-like infamy reduction for early game
@@ -17,7 +18,12 @@
    - Epirus is a state and Athens is in Central Greece
    - Ability to create a unified India as GB (not recommended though)
    - New conquest wargoals for smaller nations
+   
+   Version 1.0
    - Vannila Scandi requierments 
    - Take capital Cb added
    - News button removed
    - Main theme Changed
+
+   Version 1.1
+   
