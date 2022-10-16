@@ -208,6 +208,7 @@ political_reforms = {
 
         yes_slavery = {
             rules = { slavery_allowed = yes }
+			global_immigrant_attract = -0.3
             allow = {
                 NOT = { has_country_flag = communist_gov }
                 NOT = { has_country_flag = fascist_gov }
@@ -268,7 +269,7 @@ political_reforms = {
             rich_vote = 2
             middle_vote = 1
             poor_vote = 0
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.05
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -278,13 +279,13 @@ political_reforms = {
             middle_vote = 1
             poor_vote = 0
 
-            global_immigrant_attract = 0.08
+            global_immigrant_attract = 0.1
         }
         universal_weighted_voting = {
             rich_vote = 3
             middle_vote = 2
             poor_vote = 1
-            global_immigrant_attract = 0.30
+            global_immigrant_attract = 0.65
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -293,7 +294,7 @@ political_reforms = {
             rich_vote = 1
             middle_vote = 1
             poor_vote = 1
-            global_immigrant_attract = 0.55
+            global_immigrant_attract = 1.7
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -388,7 +389,7 @@ political_reforms = {
             ruling_party_support = 0.25
             literacy_con_impact = -0.25
             suppression_points_modifier = 0.25
-            global_immigrant_attract = -0.01
+            global_immigrant_attract = -0.1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -403,7 +404,7 @@ political_reforms = {
         free_press = {
             literacy_con_impact = 0.25
             issue_change_speed = 0.5
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.5
             suppression_points_modifier = -0.25
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
@@ -645,7 +646,7 @@ social_reforms = {
         trinket_wage = {
             minimum_wage = 0.20
             administrative_multiplier = 1
-            global_immigrant_attract = 0.01
+            global_immigrant_attract = 0.02
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -653,7 +654,7 @@ social_reforms = {
         low_minimum_wage = {
             minimum_wage = 0.40
             administrative_multiplier = 2
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.04
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -661,7 +662,7 @@ social_reforms = {
         acceptable_minimum_wage = {
             minimum_wage = 0.60
             administrative_multiplier = 3
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.06
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -669,7 +670,7 @@ social_reforms = {
         good_minimum_wage = {
             minimum_wage = 0.80
             administrative_multiplier = 4
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -700,7 +701,7 @@ social_reforms = {
             artisan_throughput = -0.03
             minimum_wage = 0.15
             administrative_multiplier = 2
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.025
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -711,7 +712,7 @@ social_reforms = {
             artisan_throughput = -0.04
             minimum_wage = 0.2
             administrative_multiplier = 3
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.05
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -722,7 +723,7 @@ social_reforms = {
             artisan_throughput = -0.05
             minimum_wage = 0.3
             administrative_multiplier = 4
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -740,7 +741,7 @@ social_reforms = {
             factory_cost = 0.20
             factory_maintenance = 0.1
             administrative_multiplier = 1
-            global_immigrant_attract = 0.01
+            global_immigrant_attract = 0.02
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -752,7 +753,7 @@ social_reforms = {
             rgo_output = -0.02
             artisan_output = -0.02
             administrative_multiplier = 2
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.04
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -764,7 +765,7 @@ social_reforms = {
             rgo_output = -0.03
             artisan_output = -0.03
             administrative_multiplier = 3
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.06
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -776,7 +777,7 @@ social_reforms = {
             rgo_output = -0.04
             artisan_throughput = -0.04
             administrative_multiplier = 4
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -792,28 +793,28 @@ social_reforms = {
         }
         trinket_subsidies = {
             unemployment_benefit = 0.50
-            global_immigrant_attract = 0.01
+            global_immigrant_attract = 0.02
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
         }
         low_subsidies = {
             unemployment_benefit = 1.0
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.04
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
         }
         acceptable_subsidies = {
             unemployment_benefit = 1.5
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.08
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
         }
         good_subsidies = {
             unemployment_benefit = 2.0
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.16
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -828,21 +829,21 @@ social_reforms = {
         }
         trinket_pensions = {
             pension_level    = 0.50
-            global_immigrant_attract = 0.01
+            global_immigrant_attract = 0.02
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
         }
         low_pensions = {
             pension_level    = 1.0
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.04
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
         }
         acceptable_pensions = {
             pension_level    = 1.5
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.06
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -850,7 +851,7 @@ social_reforms = {
         good_pensions = {
             pension_level    = 2.0
             global_population_growth = 0.001
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -867,7 +868,7 @@ social_reforms = {
         trinket_health_care = {
             global_population_growth = 0.001
             administrative_multiplier = 1
-            global_immigrant_attract = 0.01
+            global_immigrant_attract = 0.02
             allow = {
                 has_country_flag = medicine_invented
                 NOT = { has_country_flag = government_busy_with_something }
@@ -876,7 +877,7 @@ social_reforms = {
         low_health_care = {
             global_population_growth = 0.002
             administrative_multiplier = 2
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.04
             allow = {
                 has_country_flag = germs_invented
                 NOT = { has_country_flag = government_busy_with_something }
@@ -885,7 +886,7 @@ social_reforms = {
         acceptable_health_care = {
             global_population_growth = 0.003
             administrative_multiplier = 3
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.08
             allow = {
                 has_country_flag = gaslights_invented
                 NOT = { has_country_flag = government_busy_with_something }
@@ -894,7 +895,7 @@ social_reforms = {
         good_health_care = {
             global_population_growth = 0.004
             administrative_multiplier = 4
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.10
             allow = {
                 has_country_flag = electricity_invented
                 NOT = { has_country_flag = government_busy_with_something }
@@ -914,7 +915,7 @@ social_reforms = {
         low_schools = {
             education_efficiency_modifier = 0.05
             global_assimilation_rate = 0.002
-            global_immigrant_attract = 0.02
+            global_immigrant_attract = 0.04
             administrative_multiplier = 1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
@@ -923,7 +924,7 @@ social_reforms = {
         acceptable_schools = {
             education_efficiency_modifier = 0.075
             global_assimilation_rate = 0.005
-            global_immigrant_attract = 0.03
+            global_immigrant_attract = 0.08
             administrative_multiplier = 2
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
@@ -932,7 +933,7 @@ social_reforms = {
         good_schools = {
             education_efficiency_modifier = 0.1
             global_assimilation_rate = 0.01
-            global_immigrant_attract = 0.04
+            global_immigrant_attract = 0.016
             administrative_multiplier = 3
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
@@ -1002,7 +1003,7 @@ social_reforms = {
 
         child_labor_illegal = {
             education_efficiency_modifier = 0.02
-            global_immigrant_attract = 0.05
+            global_immigrant_attract = 0.1
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
@@ -1032,7 +1033,7 @@ social_reforms = {
             rules = { all_voting = yes }
             non_accepted_pop_militancy_modifier = -0.01
             global_assimilation_rate = 0.15
-            global_immigrant_attract = 0.08
+            global_immigrant_attract = 0.4
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
             }
