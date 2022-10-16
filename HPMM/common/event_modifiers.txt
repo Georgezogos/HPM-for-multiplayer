@@ -1103,6 +1103,14 @@ colonial_recruitment = {
     icon = 9
 }
 
+custom_baby_boom_1 = {
+    population_growth = 0.01
+	immigrant_attract = 3.0
+	education_efficiency_modifier = 0.5
+	
+    icon = 19
+}
+
 small_baby_boom = {
     population_growth = 0.001
     icon = 19
