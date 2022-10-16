@@ -88,7 +88,7 @@ political_decisions = {
         allow = {
             war = no
             is_mobilised = no
-            prestige = 50
+            prestige = 30
             nationalism_n_imperialism = 1
             PRG = {
                 OR = {
@@ -300,8 +300,84 @@ political_decisions = {
             2305 = { remove_core = LPL }
             2309 = { remove_core = LPL }
             2420 = { remove_core = LPL }
+
+            }
+			
+        ai_will_do = { factor = 1 }
+		}
+	
+	reward_for_form = {
+        potential = {
+            OR = {
+                tag = LPL
+                tag = GCO
+            }
+            NOT = { has_country_flag = took_the_bonus }
         }
 
-        ai_will_do = { factor = 1 }
-    }
+        allow = {
+		NOT = { has_country_flag = took_the_bonus }
+        }
+
+        effect = {
+            set_country_flag = took_the_bonus
+ 			 add_country_modifier = {
+                name = custom_baby_boom_1
+                duration = 7000
+				}
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+		}
+		
+	reward_for_peru = {
+        potential = {
+            tag = PBC
+            NOT = { has_country_flag = took_the_bonus }
+        }
+
+        allow = {
+		NOT = { exists = PEU }
+		}
+
+        effect = {
+            set_country_flag = took_the_bonus
+ 			 add_country_modifier = {
+                name = custom_baby_boom_1
+                duration = 7000
+				}
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+	}
+	
+		reward_for_brazil = {
+        potential = {
+            tag = BRZ
+            NOT = { has_country_flag = took_the_bonus }
+        }
+
+        allow = {
+		revolution_n_counterrevolution = 1
+		social_science = 1
+		modern_central_bank_system = 1
+		prestige = 100
+		}
+
+        effect = {
+            set_country_flag = took_the_bonus
+ 			 add_country_modifier = {
+                name = custom_baby_boom_1
+                duration = 7000
+				}
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+	}
 }
