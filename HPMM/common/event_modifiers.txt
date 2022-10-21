@@ -2569,3 +2569,12 @@ emergency_tax_measures2 = {
     global_pop_militancy_modifier = 0.10
     icon = 10
 }
+
+### NV Changes ###
+national_confusion = {
+	research_points_modifier = -0.01
+	global_pop_consciousness_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
+	prestige = -0.01
+	icon = 2
+}
