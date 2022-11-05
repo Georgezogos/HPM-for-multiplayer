@@ -933,7 +933,7 @@ social_reforms = {
         good_schools = {
             education_efficiency_modifier = 0.1
             global_assimilation_rate = 0.01
-            global_immigrant_attract = 0.016
+            global_immigrant_attract = 0.16
             administrative_multiplier = 3
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
