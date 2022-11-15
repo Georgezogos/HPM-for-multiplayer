@@ -85,7 +85,7 @@ form_southern_italy = {
         ai_will_do = { factor = 1 }
     }
 }
-	law_of_guarantees = {
+	law_of_guarantees_2 = {
         picture = law_of_guarantees
         potential = {
             tag = SIT
@@ -175,7 +175,7 @@ form_southern_italy = {
             }
         }
     }
-	    italia_irredenta = {
+	    italia_irredenta_2 = {
         picture = italia_irredenta
         potential = {
             tag = SIT
@@ -198,7 +198,7 @@ form_southern_italy = {
             #781 = { add_core = SIT } #Zadar
         }
     }
-    italians_in_balkans = {
+    italians_in_balkans_2 = {
         picture = italia_irredenta
         potential = {
             tag = SIT
@@ -228,7 +228,7 @@ form_southern_italy = {
         }
     }
 	
-conquest_of_the_adriatic = {
+conquest_of_the_adriatic_2 = {
     picture = conquest_adriatic
         potential = {
             tag = SIT
