@@ -1,0 +1,66 @@
+#France's Ultimatum to Italy over Savoy
+country_event = {
+
+    id = 691000
+    title = "EVTNAME691000"
+    desc = "EVTDESC691000"
+    picture = "treaty"
+
+    is_triggered_only = no
+	fire_only_once = yes
+	trigger = { has_country_flag = south_italy_formed
+	}
+	
+	mean_time_to_happen = {
+		months = (1)
+	}
+
+    option = {
+        name = "EVT691000OPTA"
+        leave_alliance = FROM
+        badboy = 3
+		465 = {
+                add_core = FRA
+            }
+			466 = {
+                add_core = FRA
+            }
+			472 = {
+                add_core = FRA
+            }
+			721 = {
+                add_core = FRA
+            }
+	FRA = {	war = {	
+	target = SIT
+	attacker_goal = { casus_belli = acquire_all_cores }
+	call_ally = yes
+		}
+    } 
+}
+    option = {
+        name = "EVT691000OPTB"
+        prestige = -30	
+		
+			465 = {
+                add_core = FRA
+				remove_core = SIT
+				 secede_province = FRA
+            }
+			466 = {
+                add_core = FRA
+				remove_core = SIT
+				 secede_province = FRA
+            }
+			472 = {
+                add_core = FRA
+				remove_core = SIT
+				 secede_province = FRA
+            }
+			721 = {
+                add_core = FRA
+				remove_core = SIT
+				 secede_province = FRA
+            }
+    }
+}
