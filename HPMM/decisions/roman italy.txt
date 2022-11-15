@@ -104,7 +104,7 @@ form_roman_italy = {
             #781 = { add_core = PIT } #Zadar
         }
     }
-    italians_in_balkans = {
+    italians_in_balkans_1 = {
         picture = italia_irredenta
         potential = {
             tag = PIT
@@ -134,7 +134,7 @@ form_roman_italy = {
         }
     }
 	
-conquest_of_the_adriatic = {
+conquest_of_the_adriatic_1 = {
     picture = conquest_adriatic
         potential = {
             tag = PIT
@@ -162,10 +162,10 @@ conquest_of_the_adriatic = {
             factor = 1
         }
     }
-		law_of_guarantees = {
+		law_of_guarantees_1 = {
         picture = law_of_guarantees
         potential = {
-            tag = SIT
+            tag = PIT
             NOT = { has_country_flag = law_of_guarantees }
         }
 
