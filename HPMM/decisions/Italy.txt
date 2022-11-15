@@ -552,6 +552,8 @@ political_decisions = {
                         is_core = LOM
                         is_core = RMG
                         is_core = SYC
+						is_core = PIT
+						is_core = SIT
                     }
                 }
                 add_core = ITA
@@ -571,6 +573,8 @@ political_decisions = {
                 remove_core = AUS
                 remove_core = KUK
                 remove_core = TRE
+				remove_core = PIT
+				remove_core = SIT
             }
             any_owned = {
                 limit = {
@@ -826,7 +830,8 @@ political_decisions = {
     italian_call_to_union = {
         picture = form_italy
         potential = {
-            is_culture_group = italian
+            primary_culture = north_italian
+			NOT = tag = PAP
             NOT = {
                 exists = ITA
                 has_global_flag = italian_call_to_union
