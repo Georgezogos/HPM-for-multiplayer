@@ -543,6 +543,8 @@ AUS        = "countries/Austria.txt"
 USA        = "countries/USA.txt"
 JAP        = "countries/Japan.txt"
 ITA        = "countries/Italy.txt"
+SIT        = "countries/Italyformsouth.txt"
+PIT        = "countries/Italyfrompope.txt"
 KUK        = "countries/Austria-Hungary.txt"
 
 
