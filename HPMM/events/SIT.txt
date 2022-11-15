@@ -33,7 +33,7 @@ country_event = {
             }
 	FRA = {	war = {	
 	target = SIT
-	attacker_goal = { casus_belli = acquire_all_cores }
+	attacker_goal = { casus_belli = humiliate }
 	call_ally = yes
 		}
     } 
