@@ -1,5 +1,19 @@
 # Country unit colors.
 
+# POPISHITALY
+PIT = {
+    color1= { 196  156  10  }
+    color2= { 196  156  10  }
+    color3= { 196  156  10  }
+}
+
+# SOUTHITALY
+SIT = {
+    color1= { 112  11  11  }
+    color2= { 112  11  11  }
+    color3= { 112  11  11  }
+}
+
 # Sweden
 SWE = {
     color1= { 62 122 189  }
@@ -524,7 +538,7 @@ SIC = {
     color3= { 131 101 85  }
 }
 
-# Siebenbürgen
+# SiebenbÃ¼rgen
 SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
