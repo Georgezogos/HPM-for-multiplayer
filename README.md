@@ -26,4 +26,8 @@
    - Main theme Changed
 
    Version 1.1
-   
+   - Suez made a state
+   - National Values rework
+
+   Version 1.2 
+   - Italy update 
