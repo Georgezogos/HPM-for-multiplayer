@@ -1,0 +1,125 @@
+political_decisions = {
+    form_portugal_brazil = {
+        potential = {
+            tag = POR
+            NOT = {
+                exists = LSI
+            }
+        }
+
+        allow = {
+            ideological_thought = 1
+            war = no
+            2447 = {
+					owned_by = THIS
+				}
+			2450 = {
+					owned_by = THIS
+				}
+        }
+
+        effect = {
+            prestige = 50
+            change_tag = LSI
+            capital = 2447
+            add_accepted_culture = brazilian
+			add_accepted_culture = afro_brazilian
+            POR = {
+                all_core = {
+                    add_core = LSI
+                }
+            }
+			BRZ = {
+                all_core = {
+                    add_core = LSI
+                }
+            }
+ 			476 = {
+					add_core = LSI
+				}
+			474 = {
+					add_core = LSI
+				}
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+	african_expansion_in_angola = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		NOT = { has_country_flag = expanded_in_angola }
+        }
+
+        allow = {
+            state_n_government = 1
+        }
+
+        effect = {
+            prestige = 15
+			set_country_flag = expanded_in_angola
+ 			2004 = {
+				 secede_province = THIS
+				}
+			2005 = {
+				 secede_province = THIS
+				}
+			2006 = {
+				 secede_province = THIS
+            }
+			2008 = {
+				 secede_province = THIS
+            }
+			2002 = {
+				 secede_province = THIS
+            }
+			2009 = {
+				 secede_province = THIS
+            }
+			2007 = {
+				 secede_province = THIS
+            }
+			2011 = {
+				 secede_province = THIS
+            }
+			2010 = {
+				 secede_province = THIS
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	deus_patria_rei = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		has_country_flag = expanded_in_angola 
+		NOT = { has_country_flag = deus_patria_rei }
+		}
+
+        allow = {
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            prestige = 50
+            set_country_flag = deus_patria_rei
+            add_country_modifier = {
+                name = deus_patria_rei
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	
+}
