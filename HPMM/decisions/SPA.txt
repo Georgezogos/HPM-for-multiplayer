@@ -369,7 +369,7 @@ political_decisions = {
     create_iberia = {
         potential = {
             has_global_flag = fantasy_countries_enabled
-            is_culture_group = iberian
+            tag = SPA
             487 = { is_core = SPA }
             NOT = {
                 exists = IBR
