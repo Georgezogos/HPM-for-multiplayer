@@ -1,5 +1,10 @@
 # Country unit colors.
-
+# Lusitania
+LSI = {
+    color1= { 41 102 79  }
+    color2= { 39 108 140  }
+    color3= { 112 150 105  }
+}
 # POPISHITALY
 PIT = {
     color1= { 196  156  10  }
