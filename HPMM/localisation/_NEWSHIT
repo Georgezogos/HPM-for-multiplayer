@@ -7,3 +7,13 @@ LSI_proletarian_dictatorship;Peoples Commonwealth of Lusitania ;;;;;;;;;;;;;
 LSI_hms_government;The United Empire of Lusitania;;;;;;;;;;;;;
 LSI_prussian_constitutionalism;United Empire of Lusitania;;;;;;;;;;;;;
 LSI_absolute_monarchy;United Empire of Lusitania;;;;;;;;;;;;; 
+HSD;United States of Latin America;;;;;;;;;;;;;
+HSD_ADJ;Latin American;;;;;;;;;;;;
+HSD_democracy;United States of Latin America;;;;;;;;;;;;
+HSD_presidential_dictatorship;United States of Latin America;;;;;;;;;;;;;
+HSD_bourgeois_dictatorship;United States of Latin America;;;;;;;;;;;;
+HSD_proletarian_dictatorship;Latin American Socialist Republics;;;;;;;;;;;;;
+HSD_hms_government;The United States of Latin America;;;;;;;;;;;;
+HSD_prussian_constitutionalism;United States of Latin America;;;;;;;;;;;;;
+HSD_absolute_monarchy;Empire of the New World;;;;;;;;;;;;;	
+
