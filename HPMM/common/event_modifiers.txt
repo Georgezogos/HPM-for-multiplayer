@@ -1,6 +1,3 @@
-##################################################################################################
-# scriptable and usable for event-system below.
-##################################################################################################
 deus_patria_rei = {
     org_regain = 0.2
     land_organisation = 0.15
@@ -10,6 +7,29 @@ deus_patria_rei = {
     mobilisation_size = 0.05
     icon = 15
 
+}
+
+angolan_integration = {
+	assimilation_rate = 10.0
+	immigrant_attract = 2.0
+	population_growth = 0.001
+	farm_rgo_size = 3.0
+	mine_rgo_size = 3.0
+    icon = 15
+}
+
+angolan_boom = {
+	population_growth = 0.1
+    icon = 15
+}
+
+portugese_modernization = {
+	administrative_efficiency_modifier = 0.05
+	education_efficiency_modifier = 0.6
+	global_immigrant_attract = 1
+	max_loan_modifier = 1
+	political_reform_desire = 0.5
+    icon = 15
 }
 ####AI Personalities
 
