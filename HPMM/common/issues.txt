@@ -679,109 +679,74 @@ social_reforms = {
     work_hours = {
         administrative = yes
         next_step_only = yes
-        no_work_hour_limit = {
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        fourteen_hours = {
-            factory_throughput = -0.02
-            RGO_throughput = -0.02
-            artisan_throughput = -0.02
-            minimum_wage = 0.1
-            administrative_multiplier = 1
-            global_immigrant_attract = 0.01
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        twelve_hours = {
-            factory_throughput = -0.05
-            RGO_throughput = -0.05
-            artisan_throughput = -0.03
-            minimum_wage = 0.15
-            administrative_multiplier = 2
-            global_immigrant_attract = 0.025
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        ten_hours = {
-            factory_throughput = -0.075
-            RGO_throughput = -0.075
-            artisan_throughput = -0.04
-            minimum_wage = 0.2
-            administrative_multiplier = 3
-            global_immigrant_attract = 0.05
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        eight_hours = {
-            factory_throughput = -0.1
-            RGO_throughput = -0.1
-            artisan_throughput = -0.05
-            minimum_wage = 0.3
-            administrative_multiplier = 4
-            global_immigrant_attract = 0.1
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
+		no_work_hour_limit = {
+		}
+		fourteen_hours = {
+			factory_throughput = -0.05
+			poor_luxury_needs = -0.05
+			middle_luxury_needs = -0.05
+			administrative_multiplier = 1
+			global_immigrant_attract = 0.02 #2% was 0.01
+		}
+		twelve_hours = {
+			factory_throughput = -0.10
+			poor_luxury_needs = -0.10
+			middle_luxury_needs = -0.10
+			administrative_multiplier = 2
+			global_immigrant_attract = 0.04 #4% was 0.02
+		}
+		ten_hours = {
+			factory_throughput = -0.15
+			poor_luxury_needs = -0.15
+			middle_luxury_needs = -0.15
+			administrative_multiplier = 3
+			global_immigrant_attract = 0.06 #6% was 0.03
+		}
+		eight_hours = {
+			factory_throughput = -0.20
+			poor_luxury_needs = -0.20
+			middle_luxury_needs = -0.20
+			administrative_multiplier = 4
+			global_immigrant_attract = 0.10 #10% was 0.04
+		}
     }
-    safety_regulations = {
+        safety_regulations = {
         administrative = yes
         next_step_only = yes
-        no_safety = {
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        trinket_safety = {
-            factory_cost = 0.20
-            factory_maintenance = 0.1
-            administrative_multiplier = 1
-            global_immigrant_attract = 0.02
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        low_safety = {
-            pension_level = 0.20
-            factory_cost = 0.40
-            factory_maintenance = 0.15
-            rgo_output = -0.02
-            artisan_output = -0.02
-            administrative_multiplier = 2
-            global_immigrant_attract = 0.04
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        acceptable_safety = {
-            pension_level = 0.50
-            factory_cost = 0.60
-            factory_maintenance = 0.20
-            rgo_output = -0.03
-            artisan_output = -0.03
-            administrative_multiplier = 3
-            global_immigrant_attract = 0.06
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
-        good_safety = {
-            pension_level = 1.0
-            factory_cost = 0.80
-            factory_maintenance = 0.25
-            rgo_output = -0.04
-            artisan_throughput = -0.04
-            administrative_multiplier = 4
-            global_immigrant_attract = 0.1
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-            }
-        }
+		no_safety = {
+		}
+		trinket_safety = {
+			factory_cost = 0.25
+			rich_everyday_needs = -0.05
+			middle_everyday_needs = -0.05
+			poor_everyday_needs = -0.05
+			administrative_multiplier = 1
+			global_immigrant_attract = 0.02 #2% was 0.01
+		}
+		low_safety = {
+			factory_cost = 0.50
+			rich_everyday_needs = -0.10
+			middle_everyday_needs = -0.10
+			poor_everyday_needs = -0.10
+			administrative_multiplier = 2
+			global_immigrant_attract = 0.04 #4% was 0.02
+		}
+		acceptable_safety = {
+			factory_cost = 0.75
+			rich_everyday_needs = -0.15
+			middle_everyday_needs = -0.15
+			poor_everyday_needs = -0.15
+			administrative_multiplier = 3
+			global_immigrant_attract = 0.06 #6% was 0.03
+		}
+		good_safety = {
+			factory_cost = 1.0
+			rich_everyday_needs = -0.20
+			middle_everyday_needs = -0.20
+			poor_everyday_needs = -0.20
+			administrative_multiplier = 4
+			global_immigrant_attract = 0.10 #10% was 0.04
+		}
     }
 
     unemployment_subsidies = {
