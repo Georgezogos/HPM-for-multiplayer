@@ -5,6 +5,12 @@ LSI = {
     color2= { 39 108 140  }
     color3= { 112 150 105  }
 }
+# Hispanidad
+HSD = {
+    color1= { 82 3 58  }
+    color2= { 39 108 140  }
+    color3= { 112 150 105  }
+}
 # POPISHITALY
 PIT = {
     color1= { 196  156  10  }
