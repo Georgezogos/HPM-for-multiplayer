@@ -1,6 +1,7 @@
 #Please keep tags sorted alphabetically when you add/remove country tags
 # New shit
 LSI 		= "countries/Lusitania.txt"
+HSD 		= "countries/Hispanidad.txt"
 # Special countries...
 REB     =     "countries/rebels.txt"
 
