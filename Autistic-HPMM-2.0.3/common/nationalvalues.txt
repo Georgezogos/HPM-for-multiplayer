@@ -1,24 +1,24 @@
 nv_order = {
-	land_organisation = 0.2
+	#land_organisation = 0.2
 	org_regain = 0.05
-	land_unit_start_experience = 25
+	#land_unit_start_experience = 25
 }
 
 nv_liberty = {
-	global_immigrant_attract = 0.3
-	political_reform_desire = 0.25
+	#global_immigrant_attract = 0.3
+	political_reform_desire = 0.125
+	social_reform_desire = 0.125
 	commerce_tech_research_bonus = 0.05
 }
 
 nv_equality = {
-	non_accepted_pop_militancy_modifier = -0.02
+	#non_accepted_pop_militancy_modifier = -0.02
 	culture_tech_research_bonus = 0.05
-	global_immigrant_attract = 0.1
 }
 
 nv_autocracy = {
 	ruling_party_support = 0.3
-	mobilisation_size = 0.025
+	#mobilisation_size = 0.025
 	leadership_modifier = 1
 }
 
@@ -33,7 +33,7 @@ nv_tradition = {
 }
 
 nv_productivity = {
-	tax_efficiency = 0.05
+	#tax_efficiency = 0.05
 	RGO_throughput = 0.1
 	factory_input = -0.05
 	factory_output = 0.05
