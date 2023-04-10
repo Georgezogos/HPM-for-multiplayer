@@ -1,19 +1,20 @@
-guard = {
-	#icon = 25
+infantry_defensive = {
+	icon = 22
 	
 	type = land
-	sprite = Guard
+	sprite = Infantry
 	active = no
 	unit_type = infantry
 	floating_flag = no
-
+	
 	#Core Abilities
-	priority = 24
+	priority = 10
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 4.00
-	weighted_value = 9.0
-	
+	weighted_value = 2.0
+
+
 	#Building Costs
 	build_time = 90
 	build_cost = {
@@ -30,10 +31,10 @@ guard = {
 	
 
 	#Land Abilties
-	reconnaissance = 3
-	attack = 5
+	reconnaissance = 0
+	attack = 2
 	defence = 5
-	discipline = 1.3
-	support = 0.25
-	maneuver = 2
+	discipline = 1.0
+	support = 0.0
+	maneuver = 1
 }

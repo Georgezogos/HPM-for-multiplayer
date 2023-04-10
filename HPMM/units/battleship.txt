@@ -1,56 +1,49 @@
 battleship = {
-    icon = 21
-    naval_icon = 10
+	icon = 21
+	naval_icon = 10
+	
+	type = naval
+	sprite = Battleship
+	unit_type = big_ship
+	capital = yes
+	active = no
+	move_sound = steam_move
+	select_sound = steam_selected
+	floating_flag = yes
+	colonial_points = 10
+	
+	#Core Abilities
+	priority = 40
+	max_strength = 100
+	default_organisation = 30
+	maximum_speed = 9
+	weighted_value = 50
+	can_build_overseas = no
 
-    type = naval
-    sprite = Battleship
-    unit_type = big_ship
-    capital = yes
-    active = no
-    move_sound = steam_move
-    select_sound = steam_selected
-    floating_flag = yes
-    can_build_overseas = no
-    colonial_points = 25
 
-    #Core Abilities
-    priority = 40
-    max_strength = 100
-    default_organisation = 30
-    maximum_speed = 26
-    weighted_value = 50.0
-
-
-    #Building Costs
-    build_time = 360
-    build_cost = {
-        steamer_convoy = 120     # 7800 | was 80 - 5200
-        artillery = 90             # 5400 | was 20 - 1200
-        canned_food = 40         # 640  | was 10 - 160
-        telephones = 20            # 320  | was 0
-        regular_clothes = 40     # 232  | was 15 - 87
-        fuel = 30                 # 750  | was coal 25 - 57.5
-    }
-    # Total: 15142 | was 6704.5
-    min_port_level = 4
-    limit_per_port = 1
-    supply_consumption_score = 50
-
-    supply_consumption = 1.0
-    supply_cost = {
-        steamer_convoy = 1.4
-        artillery = 0.7
-        canned_food = 0.8
-        telephones = 0.01
-        fuel = 4
-        ammunition = 0.6
-        regular_clothes = 0.3
-        tobacco = 1.5
-    }
-
-    #Naval Abilities
-    hull = 60
-    gun_power = 40
-    fire_range = 0.75
-    evasion = 0
+	#Building Costs
+	build_time = 720
+	build_cost = {
+		steamer_convoy = 60
+		artillery = 50
+		canned_food = 150
+	}
+	min_port_level = 4
+	limit_per_port = -1 #-1 is unlimited, but it is possible to limit number of ships per port level.
+	supply_consumption_score = 0
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		steamer_convoy = 2.5 #75
+		artillery = 0.15       #40
+		#canned_food = 0.4     #4
+		#steel = 5             #23.5
+		#coal = 3.3            #7.59 total 149.4
+		fuel = 1.05
+	}
+	
+	#Naval Abilties
+	hull = 60
+	gun_power = 40
+	fire_range = 1.0
 }
