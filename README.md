@@ -32,8 +32,8 @@
    Version 1.2 
    - Italy update 
    
-   Version 2.02
+   Version 2.0.2
    - Added flavour to Hispanidad, Lusitania and some Igor changes in common files.
    
-   Version 2.03
+   Version 2.0.3
    - Added inventions and technologies from Igor with some changes in some inventions
