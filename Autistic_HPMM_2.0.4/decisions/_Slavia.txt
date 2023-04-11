@@ -1,0 +1,156 @@
+political_decisions = {
+    claim_slavia = {
+        potential = {
+			tag = RUS
+			nationalism_n_imperialism = 1
+            NOT = {
+                exists = SLA
+            }
+			NOT = { has_country flag = slavia_claimed }
+        }
+
+        allow = {
+			year = 1850
+            war = no
+        }
+
+        effect = {
+            prestige = 50	
+			set_country_flag = slavia_claimed
+            CZH = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            UKR = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            KRA = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            SLO = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            SER = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            MON = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            CRO = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            BUL = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            BOS = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            CPL = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            SLS = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+            PZN = {
+                all_core = {
+                    add_core = SLA
+                }
+            }
+		}
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	form_slavia = {
+        potential = {
+			tag = RUS
+			year = 1855
+			NOT = {
+                exists = SLA
+            }
+        }
+
+        allow = {
+            year = 1870
+			nationalism_n_imperialism = 1
+			706 = {
+					owned_by = THIS
+				}
+			1008 = {
+					owned_by = THIS
+				}
+            718 = {
+					owned_by = THIS
+				}
+			958 = {
+					owned_by = THIS
+				}
+			625 = {
+					owned_by = THIS
+				}
+			633 = {
+					owned_by = THIS
+				}
+			768 = {
+					owned_by = THIS
+				}
+            771 = {
+					owned_by = THIS
+				}
+			783 = {
+					owned_by = THIS
+				}
+			794 = {
+					owned_by = THIS
+				}
+			806 = {
+					owned_by = THIS
+				}
+			809 = {
+					owned_by = THIS
+				}
+        }
+
+        effect = {
+            prestige = 150
+            change_tag = SLA
+            add_accepted_culture = serb
+			add_accepted_culture = bulgariann
+			add_accepted_culture = croat
+			add_accepted_culture = slovene
+			add_accepted_culture = bosniak
+			add_accepted_culture = polish
+            add_accepted_culture = western_slavic
+			add_accepted_culture = czech
+			add_accepted_culture = slovak
+			add_accepted_culture = russian
+			add_accepted_culture = byelorussian
+			add_accepted_culture = ukrainian
+		}
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
