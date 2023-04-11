@@ -1,9 +1,15 @@
 #Please keep tags sorted alphabetically when you add/remove country tags
+
+# Special countries...
+REB     =     "countries/rebels.txt"
+ 
 # New shit
 LSI 		= "countries/Lusitania.txt"
 HSD 		= "countries/Hispanidad.txt"
-# Special countries...
-REB     =     "countries/rebels.txt"
+SBO 		= "countries/Sublime Otooman.txt"
+RUM			= "countries/Rumelia.txt"
+AZL 		= "countries/Albania-Brazil.txt"
+SLA 		= "countries/Slavia.txt"
 
 ##HPM
 PNK        ="countries/Pontianak.txt"
