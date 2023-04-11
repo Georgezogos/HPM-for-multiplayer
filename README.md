@@ -37,3 +37,9 @@
    
    Version 2.0.3
    - Added inventions and technologies from Igor with some changes in some inventions
+   - 
+   Version 2.0.4
+   - Changes in Cbs and NVs
+   
+   Version 2.0.3
+   - Added Slavia, Rumelia, Sublime Porte
