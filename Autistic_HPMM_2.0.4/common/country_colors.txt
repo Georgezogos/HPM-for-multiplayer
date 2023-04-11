@@ -1,4 +1,28 @@
 # Country unit colors.
+# Albania Brazil
+AZL = {
+    color1= { 87 0 17  }
+    color2= { 39 108 140  }
+    color3= { 112 150 105  }
+}
+# Slavia
+SLA = {
+    color1= { 12 51 5  }
+    color2= { 39 108 140  }
+    color3= { 112 150 105  }
+}
+# Rumelia
+RUM = {
+    color1= { 118 135 61  }
+    color2= { 39 108 140  }
+    color3= { 112 150 105  }
+}
+# Sublime Ottoman
+SBO = {
+    color1= { 145  65  65 }
+    color2= { 255 255 255  }
+    color3= { 193 26 14  }
+}
 # Lusitania
 LSI = {
     color1= { 41 102 79  }
