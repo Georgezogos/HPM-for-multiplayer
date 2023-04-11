@@ -68,11 +68,6 @@ political_decisions = {
         picture = kanun_i_esasi
         potential = {
             tag = TUR
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-                government = hms_government
-            }
             has_country_flag = tanzimat_reforms_enacted
             NOT = {
                 has_country_flag = ottoman_constitution_refused
@@ -86,14 +81,6 @@ political_decisions = {
             revolution_n_counterrevolution = 1
             NOT = { citizenship_policy = residency }
             citizens_rights = all_voting_pops
-            OR = {
-                liberal = 30
-                socialist = 30
-                AND = {
-                    liberal = 15
-                    socialist = 15
-                }
-            }
         }
 
         effect = {
@@ -137,6 +124,107 @@ political_decisions = {
                     ideology = liberal
                     factor = -6
                 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+    form_sublime_porte = {
+        picture = kanun_i_esasi
+        potential = {
+            tag = TUR
+            has_country_flag = tanzimat_reforms_enacted
+            NOT = {
+                has_country_flag = enacted_ottomanism
+                has_country_flag = enacted_sublime_porte
+            }
+        }
+
+        allow = {
+            revolution_n_counterrevolution = 1
+        }
+
+        effect = {
+            set_country_flag = enacted_sublime_porte
+			change_tag = SBO
+			SER = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			TUR = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			SER = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			BOS = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			GRE = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			BUL = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			ALB = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+			ROM = {
+                all_core = {
+                    add_core = SBO
+                }
+            }
+            random_owned = {
+                limit = {
+                    owner = { any_owned_province = { is_core = ALB } }
+                }
+                owner = { add_accepted_culture = albanian }
+            }
+            random_owned = {
+                limit = {
+                    owner = { any_owned_province = { is_core = BOS } }
+                }
+                owner = { add_accepted_culture = bosniak }
+            }
+            random_owned = {
+                limit = {
+                    owner = { any_owned_province = { is_core = BUL } }
+                }
+                owner = { add_accepted_culture = bulgarian }
+            }
+            random_owned = {
+                limit = {
+                    owner = { any_owned_province = { is_core = SER } }
+                }
+                owner = { add_accepted_culture = serb }
+            }
+            random_owned = {
+                limit = {
+                    owner = { any_owned_province = { is_core = GRE }  }
+                }
+                owner = { add_accepted_culture = greek }
+            }
+            random_owned = {
+                limit = {
+                    owner = { any_owned_province = { is_core =ROM }  }
+                }
+                owner = { add_accepted_culture = romanian }
             }
         }
 
@@ -236,7 +324,7 @@ political_decisions = {
         }
 
         effect = {
-            badboy = 5
+            badboy = 1
             set_country_flag = montenegro_claims
             relation = {
                 who = MON
@@ -458,36 +546,23 @@ political_decisions = {
         potential = {
             tag = TUR
             NOT = { has_country_flag = tunisia_annexed }
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-            }
             TUN = {
                 exists = yes
                 vassal_of = THIS
-                neighbour = THIS
             }
         }
 
         allow = {
-            is_greater_power = yes
             nationalism_n_imperialism = 1
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-            }
             OR = {
                 owns = 1745
                 AND = {
                     is_our_vassal = EGY
-                    is_sphere_leader_of = EGY
                 }
             }
             war = no
             TUN = {
-                in_sphere = THIS
                 vassal_of = THIS
-                neighbour = THIS
             }
         }
 
@@ -510,39 +585,25 @@ political_decisions = {
         picture = map_wallachia
         potential = {
             tag = TUR
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-            }
             NOT = { exists = ROM }
             NOT = { has_country_flag = wallachia_annexed }
             WAL = {
                 vassal_of = THIS
-                neighbour = THIS
             }
         }
 
         allow = {
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-            }
             war = no
-            has_recently_lost_war = no
             invention = manifest_destiny
-            is_greater_power = yes
             nationalism_n_imperialism = 1
-            war_policy = jingoism
             WAL = {
-                in_sphere = THIS
                 vassal_of = THIS
-                neighbour = THIS
             }
         }
 
         effect = {
             set_country_flag = wallachia_annexed
-            badboy = 10
+            badboy = 3
             relation = {
                 who = RUS
                 value = -200
@@ -566,39 +627,25 @@ political_decisions = {
         picture = map_moldavia
         potential = {
             tag = TUR
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-            }
             NOT = { exists = ROM }
             NOT = { has_country_flag = moldavia_annexed }
             MOL = {
                 vassal_of = THIS
-                neighbour = THIS
             }
         }
 
         allow = {
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-            }
             war = no
-            has_recently_lost_war = no
             invention = manifest_destiny
-            is_greater_power = yes
             nationalism_n_imperialism = 1
-            war_policy = jingoism
             MOL = {
-                in_sphere = THIS
                 vassal_of = THIS
-                neighbour = THIS
             }
         }
 
         effect = {
             set_country_flag = moldavia_annexed
-            badboy = 10
+            badboy = 3
             relation = {
                 who = RUS
                 value = -200
@@ -1057,7 +1104,7 @@ political_decisions = {
 
         effect = {
             set_country_flag = claimed_arab_coast
-            badboy = 5
+            badboy = 1
             1163 = { add_core = THIS }
             1164 = { add_core = THIS }
             random_owned = {
