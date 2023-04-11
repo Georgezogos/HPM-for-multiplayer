@@ -355,9 +355,12 @@ political_decisions = {
         }
 	}
 	
-		reward_for_brazil = {
+	reward_for_brazil = {
         potential = {
-            tag = BRZ
+           OR = {
+				tag = BRZ
+				tag = AZL
+			}
             NOT = { has_country_flag = took_the_bonus }
         }
 
