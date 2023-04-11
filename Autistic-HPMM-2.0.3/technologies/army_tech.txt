@@ -2425,6 +2425,7 @@ military_staff_system = {
 	army_base = {
 		default_organisation = 5
 		supply_consumption = 0.05
+		}
     ai_chance = {
         factor = 1.5
         modifier = {
@@ -2562,6 +2563,7 @@ military_plans = {
 	army_base = {
 		default_organisation = 5
 		supply_consumption = 0.05
+		}
     ai_chance = {
         factor = 1.5
         modifier = {
@@ -3109,7 +3111,7 @@ aeronautics = {
 		default_organisation = 10
 		supply_consumption = 0.05
     unciv_military = yes
-
+	}
     ai_chance = {
         factor = 2
         modifier = {
