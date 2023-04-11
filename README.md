@@ -41,5 +41,5 @@
    Version 2.0.4
    - Changes in Cbs and NVs
    
-   Version 2.0.3
+   Version 2.0.5
    - Added Slavia, Rumelia, Sublime Porte
