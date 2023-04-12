@@ -3785,54 +3785,21 @@ acquire_state = {
                 }
             }
         }
-        is_vassal = no
-        OR = {
-            neighbour = THIS
-            war_with = THIS
-        }
-        NOT = {
-            is_our_vassal = THIS
-            has_country_modifier = neutrality_modifier
-        }
-        any_state = {
-            is_colonial = no
-            NOT = { any_owned_province = { is_capital = yes } }
-        }
-        OR = {
-            THIS = { civilized = no }
-            civilized = yes
-        }
-        OR = {
-            war_with = THIS
-            THIS = {
-                NOT = { has_country_modifier = neutrality_modifier }
-            }
-        }
-        OR = {
-            war_with = THIS
-            THIS = { NOT = { has_country_modifier = no_more_war } }
-        }
-        OR = {
-            THIS = { government = fascist_dictatorship }
-            THIS = { government = proletarian_dictatorship }
-            THIS = { civilized = no }
-            war_with = THIS
-            NOT = { relation = { who = THIS value = 0 } }
-            THIS = { ai = no }
-        }
-        #AI will not use this CB when duking it out over hegemony
-        OR = {
-            THIS = { ai = no }
-            NOT = {
-                AND = {
-                    culture_has_union_tag = yes
-                    is_culture_group = THIS
-                    cultural_union = { exists = no }
-                    is_greater_power = yes
-                    THIS = { is_greater_power = yes }
-                }
-            }
-        }
+		NOT = { is_our_vassal = THIS }
+		number_of_states = 2 # annex if you want their last state
+		any_owned_province = {
+			not = { is_core = THIS }
+			is_colonial = no
+		}
+		OR = {
+			civilized = yes
+			AND = {
+				civilized = no
+				THIS = {
+					civilized = no
+				}
+			}
+		}
     }
 
     allowed_states = {
