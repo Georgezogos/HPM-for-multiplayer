@@ -25,7 +25,7 @@ sea_starts = {
     3313 3314 3315 3316 3317 3318
 }
 
-definitions = "../mod/HPMM/map/definition.csv"
+definitions = "../mod/Autistic_HPMM_2.0.5/map/definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
 terrain = "terrain.bmp"
