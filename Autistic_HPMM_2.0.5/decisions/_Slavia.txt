@@ -2,20 +2,19 @@ political_decisions = {
     claim_slavia = {
         potential = {
 			tag = RUS
-			nationalism_n_imperialism = 1
             NOT = {
                 exists = SLA
             }
-			NOT = { has_country flag = slavia_claimed }
+			NOT = { has_country_flag = slavia_claimed }
         }
 
         allow = {
-			year = 1850
+			nationalism_n_imperialism = 1
             war = no
         }
 
         effect = {
-            prestige = 50	
+            prestige = 25
 			set_country_flag = slavia_claimed
             CZH = {
                 all_core = {
@@ -86,7 +85,7 @@ political_decisions = {
 	form_slavia = {
         potential = {
 			tag = RUS
-			year = 1855
+			has_country_flag = slavia_claimed
 			NOT = {
                 exists = SLA
             }
