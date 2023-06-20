@@ -1,5 +1,5 @@
 political_decisions = {
-    claim_slavia = {
+    claim_rumelia = {
         potential = {
             OR  = {
 			tag = ROM
@@ -30,28 +30,29 @@ political_decisions = {
 
         effect = {
             prestige = 75	
+			change_tag = RUM
 			add_accepted_culture = romanian
 			add_accepted_culture = serb
 			add_accepted_culture = bulgarian
 			add_accepted_culture = albanian
             ALB = {
                 all_core = {
-                    add_core = SLA
+                    add_core = RUM
                 }
             }
             SER = {
                 all_core = {
-                    add_core = SLA
+                    add_core = RUM
                 }
             }
             BUL = {
                 all_core = {
-                    add_core = SLA
+                    add_core = RUM
                 }
             }
             ROM = {
                 all_core = {
-                    add_core = SLA
+                    add_core = RUM
                 }
             }
 		}
