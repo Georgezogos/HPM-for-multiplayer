@@ -1,0 +1,24 @@
+country_event {
+    id = 696969
+
+    title = "Pope sucks at the game"
+
+    desc = "Pope is a sore loser who can't form Italy"
+
+    picture = "nick"
+
+    fire_only_once = yes
+
+    trigger = {
+        ai = no
+        year = 1836
+    }
+
+    option = {
+        name = "Laugh at Pope"
+
+        THIS = {
+            prestige = 1
+        }
+    }
+}
