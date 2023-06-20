@@ -1,0 +1,252 @@
+political_decisions = {
+
+    embrace_nordism = {
+        picture = form_scandinavia
+        potential = {
+            tag = SCA
+            OR = {
+                AND = {
+                    NOT = { accepted_culture = finnish }
+                    any_owned_province = { any_pop = { has_pop_culture = finnish } }
+                }
+                AND = {
+                    NOT = { accepted_culture = icelandic }
+                    any_owned_province = { any_pop = { has_pop_culture = icelandic } }
+                }
+            }
+        }
+
+        allow = {
+            phenomenalism = 1
+            prestige = 100
+            upper_house_composition = population_equal_weight
+            public_meetings = yes_meeting
+            press_rights = free_press
+            plurality = 50
+            NOT = {
+                citizens_rights = primary_culture_only
+                citizenship_policy = residency
+            }
+            OR = {
+                government = democracy
+                government = hms_government
+            }
+        }
+
+        effect = {
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_primary_culture = yes
+                        is_accepted_culture = yes
+                    }
+                }
+                consciousness = 1
+            }
+
+            any_pop = {
+                limit = {
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
+                consciousness = 3
+            }
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = nordism_embraced } } }
+                owner = { set_country_flag = nordism_embraced }
+            }
+
+            prestige_factor = -0.1
+
+            random_owned = {
+                limit = {
+                    any_pop = { has_pop_culture = finnish }
+                    owner = { NOT = { accepted_culture = finnish } }
+                }
+                owner = {
+                    add_accepted_culture = finnish
+                    any_pop = {
+                        limit = { has_pop_culture = finnish }
+                        militancy = -1
+                        consciousness = -3
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    is_core = FIN
+                }
+                owner = {
+                    FIN = { all_core = { add_core = SCA } }
+                }
+            }
+
+
+            random_owned = {
+                limit = {
+                    any_pop = { has_pop_culture = icelandic }
+                    owner = { NOT = { accepted_culture = icelandic } }
+                }
+                owner = {
+                    add_accepted_culture = icelandic
+                    DEN_251 = { add_core = SCA }
+                    any_pop = {
+                        limit = { has_pop_culture = icelandic }
+                        militancy = -1
+                        consciousness = -3
+                    }
+                    any_country = {
+                        limit = {
+                            primary_culture = icelandic
+                            pop_majority_culture = icelandic
+                            ai = yes
+                            OR = {
+                                vassal_of = THIS
+                                in_sphere = THIS
+                            }
+                        }
+                        annex_to = SCA
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1     }
+    }
+
+    move_capital_to_gothenburg = {
+        picture = declare_republic_of_neuchatel
+        alert = no
+        potential = {
+            tag = SCA
+            owns = 329 # Gothenburg
+            NOT = { capital = 329 }
+            capital = 322
+        }
+
+        allow = {
+            NOT = { capital = 329 }
+        }
+
+        effect = {
+            capital = 329
+            prestige = 5
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+	claim_scandinavia = {
+		potential = { 
+				is_culture_group = scandinavian
+				NOT = { has_global_flag = scandi_claimed }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = scandi_claimed 
+			
+            NOR = {
+                all_core = {
+                    add_core = SCA
+                }
+            }
+			
+            SWE = {
+                all_core = {
+                    add_core = SCA
+                }
+            }
+			
+            DEN = {
+                all_core = {
+                    add_core = SCA
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ 	form_scandinavia = {
+		potential = {
+			OR = {
+				tag = SWE
+				tag = NOR
+				tag = DEN
+			}
+			NOT = {
+				exists = SCA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			SCA = {
+				all_core = {
+					OR = {
+						vassal_of = THIS
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = SCA
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = norwegian
+			add_accepted_culture = finnish
+			add_accepted_culture = icelandic
+			add_accepted_culture = sami
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = scandinavian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    name_oslo = {
+        picture = declare_republic_of_neuchatel
+        potential = {
+            is_culture_group = scandinavian
+            owns = 313
+            NOT = { has_global_flag = oslo_is_back }
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            OR = {
+                mass_politics = 1
+                year = 1925
+            }
+        }
+
+        effect = {
+            set_global_flag = oslo_is_back
+            prestige = 2
+            313 = { change_province_name = "Oslo" }
+        }
+    }
+}

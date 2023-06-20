@@ -1,0 +1,571 @@
+political_decisions = {
+    form_portugal_brazil = {
+        potential = {
+            tag = POR
+            NOT = {
+                exists = LSI
+            }
+        }
+
+        allow = {
+            ideological_thought = 1
+            war = no
+            2447 = {
+					owned_by = THIS
+				}
+			2450 = {
+					owned_by = THIS
+				}
+        }
+
+        effect = {
+            prestige = 50
+            change_tag = LSI
+            add_accepted_culture = brazilian
+			add_accepted_culture = afro_brazilian
+            POR = {
+                all_core = {
+                    add_core = LSI
+                }
+            }
+			BRZ = {
+                all_core = {
+                    add_core = LSI
+                }
+            }
+ 			476 = {
+					add_core = LSI
+				}
+			474 = {
+					add_core = LSI
+				}
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+	african_expansion_in_angola = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		NOT = { has_country_flag = expanded_in_angola }
+        }
+
+        allow = {
+            state_n_government = 1
+        }
+
+        effect = {
+            prestige = 15
+			set_country_flag = expanded_in_angola
+ 			2004 = {
+				 secede_province = THIS
+				}
+			2005 = {
+				 secede_province = THIS
+				}
+			2006 = {
+				 secede_province = THIS
+            }
+			2008 = {
+				 secede_province = THIS
+            }
+			2002 = {
+				 secede_province = THIS
+            }
+			2009 = {
+				 secede_province = THIS
+            }
+			2007 = {
+				 secede_province = THIS
+            }
+			2011 = {
+				 secede_province = THIS
+            }
+			2010 = {
+				 secede_province = THIS
+            }
+			2581 = {
+				 secede_province = THIS
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	occupy_mbanza = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		NOT = { has_country_flag = occupied_mbanza }
+        }
+
+        allow = {
+            2000 = {
+					owned_by = THIS
+				}
+        }
+
+        effect = {
+            prestige = 5
+			set_country_flag = occupied_mbanza
+ 			2001 = {
+				 secede_province = THIS
+				}
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	deus_patria_rei = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		has_country_flag = expanded_in_angola 
+		NOT = { has_country_flag = deus_patria_rei }
+		}
+
+        allow = {
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            prestige = 50
+            set_country_flag = deus_patria_rei
+            add_country_modifier = {
+                name = deus_patria_rei
+				duration = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	modernization = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		NOT = { has_country_flag = modernization }
+		}
+
+        allow = {
+            state_n_government = 1
+			experimental_railroad = 1
+			inorganic_chemistry = 1
+			private_bank_money_bill_printing=1
+			money = 500000
+        }
+
+        effect = {
+            prestige = 20
+			political_reform = no_slavery
+			political_reform = universal_weighted_voting
+			political_reform = free_press
+			political_reform = non_socialist
+			social_reform = low_minimum_wage
+			social_reform = acceptable_schools
+			social_reform = child_labor_restricted	
+			money = -500000
+            set_country_flag = modernization
+            add_country_modifier = {
+                name = portugese_modernization
+				duration = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	angolla_e_nossa = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		has_country_flag = expanded_in_angola 
+		NOT = { has_country_flag = angolla_e_nossa }
+		}
+
+        allow = {
+            year = 1860
+			1999 = {
+					owned_by = THIS
+				}
+			
+        }
+
+        effect = {
+            prestige = 20
+            set_country_flag = angolla_e_nossa
+			1999 = { trade_goods = iron }
+			2005 = { trade_goods = iron }
+			2006 = { trade_goods = sulphur }
+			2010 = { trade_goods = coal }
+			2004 = { trade_goods = coal }
+			POR_1999 = {
+			add_core = UTI
+			}
+			POR_2003 = {
+			add_core = UTI
+			}			
+			POR_2006 = {
+			add_core = UTI
+			}			
+			release = UTI
+            inherit = UTI
+			
+			POR_1999 = {
+			remove_core = UTI
+			}
+			POR_2003 = {
+			remove_core = UTI
+			}
+			POR_2006 = {
+			remove_core = UTI
+			}	
+			POR_2003 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}			
+			POR_2006 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}			
+			POR_1999 = {
+				life_rating = 30
+				assimilate = yes 
+				add_core = THIS
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+ 
+        }
+        ai_will_do = {
+            factor = 1 
+        }
+    }
+	
+	mozambiqian_expansion_and_development = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		has_country_flag = expanded_in_angola 
+		NOT = { has_country_flag = mozambiqian_expansion_and_development }
+		}
+
+        allow = {
+            year = 1860
+			2061 = {
+					owned_by = THIS
+				}
+			2051 = {
+					owned_by = THIS
+				}
+			2057 = {
+					owned_by = THIS
+				}
+			
+        }
+
+        effect = {
+            prestige = 20
+            set_country_flag = mozambiqian_expansion_and_development
+			2057 = { trade_goods = iron }
+			2050 = { trade_goods = iron }
+			2049 = { trade_goods = sulphur }
+			2064 = { trade_goods = coal }
+			2058 = { trade_goods = coal }
+			POR_2049 = {
+			add_core = UTI
+			}
+			POR_2053  = {
+			add_core = UTI
+			}			
+			POR_2054 = {
+			add_core = UTI
+			}
+			POR_2060 = {
+			add_core = UTI
+			}			
+			release = UTI
+            inherit = UTI
+			
+			POR_2049 = {
+			remove_core = UTI
+			}
+			POR_2053 = {
+			remove_core = UTI
+			}
+			POR_2054 = {
+			remove_core = UTI
+			}	
+			POR_2060 = {
+			remove_core = UTI
+			}	
+			POR_2049 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+			POR_2053 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}			
+			POR_2054 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}			
+			POR_2060 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+ 
+        }
+        ai_will_do = {
+            factor = 1 
+        }
+    }
+	
+	unite_our_colonies = {
+        potential = {
+        OR = {
+			tag = POR
+			tag = LSI
+				}
+		has_country_flag = expanded_in_angola
+		has_country_flag = mozambiqian_expansion_and_development
+		NOT = { has_country_flag = unite_our_colonies }
+		}
+
+        allow = {
+			ENG_2014 = {
+					owned_by = THIS
+				}
+			ENG_2071 = {
+					owned_by = THIS
+				}
+			ENG_2068 = {
+					owned_by = THIS
+				}
+			BEL_1987 = {
+					owned_by = THIS
+				}
+			ENG_2016 = {
+					owned_by = THIS
+				}
+			ENG_2067 = {
+					owned_by = THIS
+				}
+			
+        }
+
+        effect = {
+            prestige = 100
+            set_country_flag = unite_our_colonies
+			1987 = { trade_goods = silk }
+			1989 = { trade_goods = rubber }
+			1988 = { trade_goods = oil }
+			2071 = { trade_goods = iron }
+			2016 = { trade_goods = coal }
+			2015 = { trade_goods = dye }
+			790 = { trade_goods = cotton }
+			2016 = { trade_goods = dye }
+			ENG_2014 = {
+			add_core = UTI
+			}
+			ENG_2071  = {
+			add_core = UTI
+			}			
+			ENG_2068 = {
+			add_core = UTI
+			}
+			BEL_1987 = {
+			add_core = UTI
+			}		
+			ENG_2016 = {
+			add_core = UTI
+			}
+			ENG_2067 = {
+			add_core = UTI
+			}				
+			release = UTI
+            inherit = UTI
+			
+			ENG_2014 = {
+			remove_core = UTI
+			}
+			ENG_2071 = {
+			remove_core = UTI
+			}
+			ENG_2068 = {
+			remove_core = UTI
+			}	
+			BEL_1987 = {
+			remove_core = UTI
+			}	
+			ENG_2016 = {
+			remove_core = UTI
+			}	
+			ENG_2067 = {
+			remove_core = UTI
+			}	
+			ENG_2014 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+			ENG_2071 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}			
+			ENG_2068 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}			
+			BEL_1987 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+			ENG_2016 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+			ENG_2067 = {
+				life_rating = 30
+				add_core = THIS
+				assimilate = yes 
+				 add_province_modifier = {
+                    name = angolan_boom
+					duration = 365
+                }
+                add_province_modifier = {
+                    name = angolan_integration
+					duration = -1
+                }
+			}
+ 
+        }
+        ai_will_do = {
+            factor = 1 
+        }
+    }
+	
+}

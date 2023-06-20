@@ -1,0 +1,63 @@
+political_decisions = {
+    claim_rumelia = {
+        potential = {
+            OR  = {
+			tag = ROM
+			tag = BUL
+			tag = SER
+			tag = ALB
+			}
+            NOT = {
+                exists = RUM
+            }
+        }
+
+        allow = {
+			nationalism_n_imperialism = 1
+			674 = {
+					owned_by = THIS
+				}
+			664 = {
+					owned_by = THIS
+				}
+			806 = {
+					owned_by = THIS
+				}
+			809 = {
+					owned_by = THIS
+				}
+        }
+
+        effect = {
+            prestige = 75	
+			change_tag = RUM
+			add_accepted_culture = romanian
+			add_accepted_culture = serb
+			add_accepted_culture = bulgarian
+			add_accepted_culture = albanian
+            ALB = {
+                all_core = {
+                    add_core = RUM
+                }
+            }
+            SER = {
+                all_core = {
+                    add_core = RUM
+                }
+            }
+            BUL = {
+                all_core = {
+                    add_core = RUM
+                }
+            }
+            ROM = {
+                all_core = {
+                    add_core = RUM
+                }
+            }
+		}
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
